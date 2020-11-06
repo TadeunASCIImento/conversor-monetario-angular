@@ -1,13 +1,18 @@
 {
   "name": "cotacao-de-moedas-angular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
+  },
+  "engines": {
+    "node": "12.18.4",
+    "npm": "6.14.6"
   },
   "private": true,
   "dependencies": {
