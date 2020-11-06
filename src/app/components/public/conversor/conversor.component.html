@@ -1,0 +1,33 @@
+   <header>
+        <h3 class="titulo-conversor">
+            <b>CONVERSOR DE MOEDAS</b>
+        </h3>
+    </header>
+    <div class="form-inline">
+        <img src="assets/imagens/icone-brasil.png">
+        <label>BRL</label>
+        <input class="form-control" type="text" [(ngModel)]="inreais"
+        (keyup)="converterReal($event.target.value)" />
+        <img src="assets/imagens/icone-eua.png">
+        <label>USD</label>
+        <input class="form-control" type="text" [(ngModel)]="indolares"
+        (keyup)="converterDolar($event.target.value)" />
+        <img src="assets/imagens/icone-euro.png">
+        <label>EUR</label>
+        <input class="form-control" type="text" [(ngModel)]="ineuros"
+        (keyup)="converterEuro($event.target.value)" />
+    </div>
+    <div class="form-inline">
+        <img src="assets/imagens/icone-reino-unido.png">
+        <label>GBP</label>
+        <input class="form-control" type="text" [(ngModel)]="inlibras"
+        (keyup)="converterLibra($event.target.value)" />
+        <img src="assets/imagens/icone-argentina.png">
+        <label>ARS</label>
+        <input class="form-control" type="text" [(ngModel)]="inpesos"
+        (keyup)="converterPeso($event.target.value)" />
+        <img src="assets/imagens/icone-bitcoin.png">
+        <label>BTC</label>
+        <input class="form-control" type="text" [(ngModel)]="inbitcoins"
+         (keyup)="converterBitcoin($event.target.value)" />
+    </div>

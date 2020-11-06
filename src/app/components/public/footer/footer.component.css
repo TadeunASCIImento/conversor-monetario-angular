@@ -1,0 +1,21 @@
+.icone-email,
+.icone-github,
+.icone-linkedin,
+.icone-bitbucket {
+  margin: 20px 0px 0px 10px;
+
+}
+
+.jumbotron {
+  margin: 150px 0px 0px 0px;
+}
+
+.footer {
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+.parag-foot {
+  margin-top: 10px;
+  color: grey;
+}

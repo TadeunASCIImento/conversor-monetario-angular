@@ -1,0 +1,43 @@
+* {
+  font-family: monospace;
+}
+
+h3 {
+  color: grey;
+  text-align: justify;
+  margin: 20px 0px 20px 5px;
+}
+
+
+
+table {
+  color: grey;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  font-family: monospace;
+
+}
+
+.positivo {
+  color: #3a86ff;
+  font-weight: bold;
+}
+
+.negativo {
+  color: #ef233c;
+  font-weight: bold;
+}
+
+
+.name-moeda {
+  text-align: justify;
+}
+
+thead {
+  color: lawngreen;
+}
+
+td {
+  padding: 15px;
+}

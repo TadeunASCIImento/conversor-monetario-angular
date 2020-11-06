@@ -1,0 +1,95 @@
+<div class="container-fluid">
+    <header>
+        <h3>
+            <b>COTAÇÕES DE MOEDAS</b>
+        </h3>
+    </header>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>DATA DA COTAÇÃO</th>
+                <th>CODE</th>
+                <th>CODEIN</th>
+                <th>MOEDA</th>
+                <th>COMPRA</th>
+                <th>VENDA</th>
+                <th>MÁXIMO(DIA)</th>
+                <th>MÍNIMO(DIA)</th>
+                <th>VARIAÇÃO</th>
+                <th>% VARIAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dolar of dolar">
+                <td>{{dolar.create_date}}</td>
+                <td>{{dolar.code}}</td>
+                <td>{{dolar.codein}}</td>
+                <td class="name-moeda">{{dolar.name}}</td>
+                <td>{{dolar.bid}}</td>
+                <td>{{dolar.ask}}</td>
+                <td>{{dolar.high}}</td>
+                <td>{{dolar.low}}</td>
+                <td class="positivo" *ngIf="dolar.varBid >= 0">{{dolar.varBid}}</td>
+                <td class="negativo" *ngIf="dolar.varBid < 0">{{dolar.varBid}}</td>
+                <td class="positivo" *ngIf="dolar.pctChange >= 0">{{dolar.pctChange}}</td>
+                <td class="negativo" *ngIf="dolar.pctChange < 0">{{dolar.pctChange}}</td>
+            </tr>
+            <tr *ngFor="let euro of euro">
+                <td>{{euro.create_date}}</td>
+                <td>{{euro.code}}</td>
+                <td>{{euro.codein}}</td>
+                <td class="name-moeda">{{euro.name}}</td>
+                <td>{{euro.bid}}</td>
+                <td>{{euro.ask}}</td>
+                <td>{{euro.high}}</td>
+                <td>{{euro.low}}</td>
+                <td class="positivo" *ngIf="euro.varBid > 0">{{euro.varBid}}</td>
+                <td class="negativo" *ngIf="euro.varBid < 0">{{euro.varBid}}</td>
+                <td class="positivo" *ngIf="euro.pctChange >= 0">{{euro.pctChange}}</td>
+                <td class="negativo" *ngIf="euro.pctChange < 0">{{euro.pctChange}}</td>
+            </tr>
+            <tr *ngFor="let libra of libra">
+                <td>{{libra.create_date}}</td>
+                <td>{{libra.code}}</td>
+                <td>{{libra.codein}}</td>
+                <td class="name-moeda">{{libra.name}}</td>
+                <td>{{libra.bid}}</td>
+                <td>{{libra.ask}}</td>
+                <td>{{libra.high}}</td>
+                <td>{{libra.low}}</td>
+                <td class="positivo" *ngIf="libra.varBid > 0">{{libra.varBid}}</td>
+                <td class="negativo" *ngIf="libra.varBid < 0">{{libra.varBid}}</td>
+                <td class="positivo" *ngIf="libra.pctChange >= 0">{{libra.pctChange}}</td>
+                <td class="negativo" *ngIf="libra.pctChange < 0">{{libra.pctChange}}</td>
+            </tr>
+            <tr *ngFor="let peso of peso">
+                <td>{{peso.create_date}}</td>
+                <td>{{peso.code}}</td>
+                <td>{{peso.codein}}</td>
+                <td class="name-moeda">{{peso.name}}</td>
+                <td>{{peso.bid}}</td>
+                <td>{{peso.ask}}</td>
+                <td>{{peso.high}}</td>
+                <td>{{peso.low}}</td>
+                <td class="positivo" *ngIf="peso.varBid >= 0">{{peso.varBid}}</td>
+                <td class="negativo" *ngIf="peso.varBid < 0">{{peso.varBid}}</td>
+                <td class="positivo" *ngIf="peso.pctChange >= 0">{{peso.pctChange}}</td>
+                <td class="negativo" *ngIf="peso.pctChange < 0">{{peso.pctChange}}</td>
+            </tr>
+            <tr *ngFor="let bitcoin of bitcoin">
+                <td>{{bitcoin.create_date}}</td>
+                <td>{{bitcoin.code}}</td>
+                <td>{{bitcoin.codein}}</td>
+                <td class="name-moeda">{{bitcoin.name}}</td>
+                <td>{{bitcoin.bid}}</td>
+                <td>{{bitcoin.ask}}</td>
+                <td>{{bitcoin.high}}</td>
+                <td>{{bitcoin.low}}</td>
+                <td class="positivo" *ngIf="bitcoin.varBid >= 0">{{bitcoin.varBid}}</td>
+                <td class="negativo" *ngIf="bitcoin.varBid < 0">{{bitcoin.varBid}}</td>
+                <td class="positivo" *ngIf="bitcoin.pctChange >= 0">{{bitcoin.pctChange}}</td>
+                <td class="negativo" *ngIf="bitcoin.pctChange < 0">{{bitcoin.pctChange}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
